@@ -1,5 +1,5 @@
 import keyBy from 'lodash/keyBy';
-import { toSearchableString } from 'lib/helpers/diacriticsHelper';
+import { toSearchableString } from 'diacritics-helper';
 
 export function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
   if (!e6nGlobalResults) return null;

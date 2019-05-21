@@ -8,7 +8,6 @@
 		"email": "olivier.st-louis-desjardins@radio-canada.ca"
 	},
 	"files": [
-		"src/diacritics.js",
 		"src/index.js"
 	],
 	"keywords": [
@@ -18,6 +17,7 @@
 		"mapper"
 	],
 	"dependencies": {
+		"diacritics-helper": "0.0.1",
 		"lodash.keyby": "4.6.0"
 	}
 }
