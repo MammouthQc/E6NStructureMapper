@@ -3,8 +3,8 @@ module.exports = {
   mapE6NStaticResultsToStructure,
 };
 
-import keyBy from 'lodash/keyBy';
-import { toSearchableString } from 'diacritics-helper';
+const keyBy = require('lodash/keyBy');
+const toSearchableString = require('diacritics-helper');
 
 function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
   if (!e6nGlobalResults) return null;
