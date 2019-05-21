@@ -1,7 +1,12 @@
-import keyBy from 'lodash/keyBy';
-import { toSearchableString } from 'diacritics-helper';
+module.exports = {
+  mapE6NGlobalResultsToStructure,
+  mapE6NStaticResultsToStructure,
+};
 
-export function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
+import keyBy from 'lodash/keyBy';
+import { toSearchableString } from 'diacritics-helper/src/index';
+
+function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
   if (!e6nGlobalResults) return null;
 
   const {
@@ -41,7 +46,7 @@ export function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
   };
 }
 
-export function mapE6NStaticResultsToStructure(e6nStaticResults) {
+function mapE6NStaticResultsToStructure(e6nStaticResults) {
   if (!e6nStaticResults) return null;
 
   const {

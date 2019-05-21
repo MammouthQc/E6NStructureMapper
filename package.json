@@ -1,6 +1,6 @@
 {
 	"name": "e6n-structure-mapper",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Structure mapper for E6N public DTOs.",
 	"repository": "MammouthQc/E6NStructureMapper",
 	"author": {
@@ -17,7 +17,7 @@
 		"mapper"
 	],
 	"dependencies": {
-		"diacritics-helper": "0.0.1",
+		"diacritics-helper": "0.0.2",
 		"lodash.keyby": "4.6.0"
 	}
 }
