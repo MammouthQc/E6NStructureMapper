@@ -1,14 +1,16 @@
 {
 	"name": "e6n-structure-mapper",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Structure mapper for E6N public DTOs.",
 	"repository": "MammouthQc/E6NStructureMapper",
 	"author": {
 		"name": "Olivier St-Louis-Desjardins",
 		"email": "olivier.st-louis-desjardins@radio-canada.ca"
 	},
+	"main": "./src/index.js",
 	"files": [
-		"src/index.js"
+		"src/index.js",
+		"README.md"
 	],
 	"keywords": [
 		"e6n",
@@ -17,7 +19,7 @@
 		"mapper"
 	],
 	"dependencies": {
-		"diacritics-helper": "0.0.2",
+		"diacritics-helper": "0.0.4",
 		"lodash.keyby": "4.6.0"
 	}
 }

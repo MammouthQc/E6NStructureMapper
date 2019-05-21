@@ -4,7 +4,7 @@ module.exports = {
 };
 
 import keyBy from 'lodash/keyBy';
-import { toSearchableString } from 'diacritics-helper/src/index';
+import { toSearchableString } from 'diacritics-helper';
 
 function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
   if (!e6nGlobalResults) return null;
