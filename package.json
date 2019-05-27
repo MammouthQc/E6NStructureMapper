@@ -1,6 +1,6 @@
 {
 	"name": "e6n-structure-mapper",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Structure mapper for E6N public DTOs.",
 	"repository": "MammouthQc/E6NStructureMapper",
 	"author": {
@@ -11,6 +11,7 @@
 	"types": "./src/index.d.ts",
 	"files": [
 		"src/index.js",
+		"src/index.d.ts",
 		"README.md"
 	],
 	"keywords": [

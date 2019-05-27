@@ -1,8 +1,15 @@
+type GlobalStructureInputType = object;
+type GlobalStructureResultType = object;
+type StaticStructureInputType = object;
+type StaticStructureResultType = object;
 
-function mapE6NGlobalResultsToStructure(e6nGlobalResults: object): object | null;
-function mapE6NStaticResultsToStructure(e6nStaticResults: object): object | null;
+export function mapE6NGlobalResultsToStructure(e6nGlobalResults: GlobalStructureInputType): GlobalStructureResultType;
 
-export const result = {
-    mapE6NGlobalResultsToStructure,
-    mapE6NStaticResultsToStructure,
-};
+export function mapE6NStaticResultsToStructure(e6nStaticResults: StaticStructureInputType): StaticStructureResultType;
+
+export namespace mapE6NGlobalResultsToStructure {
+}
+
+export namespace mapE6NStaticResultsToStructure {
+}
+
