@@ -69,11 +69,11 @@ type GlobalGovernmentCall = {
 };
 
 export type StaticStructureResultType = {
-    candidates: object, // Properties are mapped by the identifiers of the candidates
+    candidates: object, // Properties are mapped by the identifiers of the candidates, therefore cannot be typed
     lists: StaticList[],
     name: string,
-    parties: object,  // Properties are mapped by the identifiers of the parties
-    ridings: object,  // Properties are mapped by the identifiers of the ridings
+    parties: object,  // Properties are mapped by the identifiers of the parties, therefore cannot be typed
+    ridings: object,  // Properties are mapped by the identifiers of the ridings, therefore cannot be typed
 };
 
 type StaticList = {
@@ -93,9 +93,7 @@ export function mapE6NGlobalResultsToStructure(e6nGlobalResults: GlobalStructure
 
 export function mapE6NStaticResultsToStructure(e6nStaticResults: StaticStructureInputType): StaticStructureResultType;
 
-export namespace mapE6NGlobalResultsToStructure {
-}
+export namespace mapE6NGlobalResultsToStructure {}
 
-export namespace mapE6NStaticResultsToStructure {
-}
+export namespace mapE6NStaticResultsToStructure {}
 

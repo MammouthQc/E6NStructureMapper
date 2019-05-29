@@ -126,8 +126,10 @@ function mapE6NStaticCandidate(e6nCandidates) {
       RI,
     } = e6nCandidate;
 
+    const name = `${F} ${L}`;
+
     return {
-      name: `${F} ${L}`,
+      name,
       firstName: F,
       gender: G,
       id: I,
@@ -138,6 +140,7 @@ function mapE6NStaticCandidate(e6nCandidates) {
       lastName: L,
       partyId: PI,
       ridingId: RI,
+      searchableName: toSearchableString(name, true),
     };
   });
 }
