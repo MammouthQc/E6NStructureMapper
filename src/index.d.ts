@@ -88,6 +88,34 @@ type StaticListData = {
     type: number,
 };
 
+export type MergedStructureType = {
+    alerts: GlobalAlert[],
+    candidates: object,
+    closedPolls: number,
+    electedNumber: number,
+    governmentCall: GlobalGovernmentCall,
+    lists: StaticList[],
+    name: string,
+    noResultsRidingsNumber: number,
+    pollingTime: number,
+    parties: object,
+    previousTimestamp: string,
+    refreshToken: string,
+    ridings: object,
+    ridingsNumberWithoutElected: number,
+    totalPolls: number,
+    voteNumber: number,
+}
+
+type MergedCandidate = {
+    differentialTextual: string,
+    id: number,
+    status: string,
+    voteNumber: number,
+    voteNumberTextual: string,
+    votePercent: number,
+    votePercentTextual: string,
+}
 
 export function mapE6NGlobalResultsToStructure(e6nGlobalResults: GlobalStructureInputType): GlobalStructureResultType;
 
