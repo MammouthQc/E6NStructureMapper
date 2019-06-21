@@ -16,6 +16,7 @@ export type GlobalStructureResultType = {
     ridings: GlobalRiding[],
     ridingsNumberWithoutElected: number,
     totalPolls: number,
+    turnoutTextual: string,
     voteNumber: number,
 };
 
@@ -59,6 +60,8 @@ type GlobalRiding = {
     leadingPartyId: number,
     pollsTotal: number,
     status: string,
+    turnout: number,
+    turnoutTextual: string,
     voteNumber: number,
     voteNumberTextual: string,
 };

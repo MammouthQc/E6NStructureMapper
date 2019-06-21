@@ -19,8 +19,9 @@ function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
     NRR,
     P,
     PC,
-    PT,
     PING,
+    PR,
+    PT,
     R,
     RT,
     TS,
@@ -42,6 +43,7 @@ function mapE6NGlobalResultsToStructure(e6nGlobalResults) {
     ridings: mapE6NGlobalRidings(R),
     ridingsNumberWithoutElected: URT,
     totalPolls: PT,
+    turnoutTextual: (PR === 0.0 || !PR) ? null : percentToTextualPercent(PR),
     voteNumber: N,
   };
 }
@@ -235,7 +237,8 @@ function mapE6NGlobalRidings(e6nRidings) {
       ITP,
       R,
       N,
-      PC,
+      PC,      
+      PR,
       PT,
     } = e6nRiding;
 
@@ -246,6 +249,8 @@ function mapE6NGlobalRidings(e6nRidings) {
       leadingPartyId: ITP,
       pollsTotal: PT,
       status: R,
+      turnout: PR,
+      turnoutTextual: percentToTextualPercent(PR),
       voteNumber: N,
       voteNumberTextual: numberToTextualNumber(N),
     };
