@@ -28,6 +28,7 @@ type GlobalAlert = {
 };
 
 type GlobalCandidate = {
+    differentialA11y: string,
     differentialTextual: string,
     id: number,
     status: string,
@@ -55,9 +56,10 @@ type GlobalParty = {
 
 type GlobalRiding = {  
     closedPolls: number,
+    differentialA11y: string,
     differentialTextual: string,
     id: number,
-    leadingPartyId: number,
+    leadingPartyIds: number[],
     pollsTotal: number,
     status: string,
     turnout: number,
