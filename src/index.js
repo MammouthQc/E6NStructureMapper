@@ -190,7 +190,8 @@ function mapE6NGlobalCandidates(e6nGlobalCandidates) {
     } = e6nGlobalCandidate;
 
     return {
-      differentialTextual: differentialNumberToTextualDifferential(D),
+      differentialA11y: differentialNumberToTextualA11y(D),
+      differentialTextual: N === 0 ? null : differentialNumberToTextualDifferential(D),
       id: I,
       status: R,
       voteNumber: N,
@@ -235,18 +236,20 @@ function mapE6NGlobalRidings(e6nRidings) {
       D,
       I,
       ITP,
+      ITPS,
       R,
       N,
-      PC,      
+      PC,
       PR,
       PT,
     } = e6nRiding;
 
     return {
       closedPolls: PC,
-      differentialTextual: differentialNumberToTextualDifferential(D),
+      differentialA11y: differentialNumberToTextualA11y(D),
+      differentialTextual: N === 0 ? null : differentialNumberToTextualDifferential(D),
       id: I,
-      leadingPartyId: ITP,
+      leadingPartyIds: ITPS || [ITP],
       pollsTotal: PT,
       status: R,
       turnout: PR,
@@ -307,13 +310,23 @@ function mapE6NGlobalLists(e6nLists) {
   });
 }
 
+
 function differentialNumberToTextualDifferential(nmbr) {
   if (nmbr === null || nmbr === undefined) return null;
 
-  if (nmbr === 0) return 'Égalité';
+  if (nmbr === 0) return "Égalité";
 
   return `${nmbr > 0 ? '+' : '-'}&nbsp;${numberToTextualNumber(Math.abs(nmbr))}`;
 }
+
+function differentialNumberToTextualA11y(nmbr) {
+  if (nmbr === null || nmbr === undefined) return null;
+
+  if (nmbr === 0) return "Égalité";
+
+  return numberToTextualNumber(Math.abs(nmbr));
+}
+
 
 function percentToTextualPercent(perc) {
   if (!perc) return '0,0&nbsp;%';
