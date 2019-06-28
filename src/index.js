@@ -314,7 +314,7 @@ function mapE6NGlobalLists(e6nLists) {
 function differentialNumberToTextualDifferential(nmbr) {
   if (nmbr === null || nmbr === undefined) return null;
 
-  if (nmbr === 0) return "Égalité";
+  if (nmbr === 0) return 'Égalité';
 
   return `${nmbr > 0 ? '+' : '-'}&nbsp;${numberToTextualNumber(Math.abs(nmbr))}`;
 }
@@ -322,7 +322,7 @@ function differentialNumberToTextualDifferential(nmbr) {
 function differentialNumberToTextualA11y(nmbr) {
   if (nmbr === null || nmbr === undefined) return null;
 
-  if (nmbr === 0) return "Égalité";
+  if (nmbr === 0) return 'Égalité';
 
   return numberToTextualNumber(Math.abs(nmbr));
 }
