@@ -59,7 +59,7 @@ type GlobalRiding = {
     differentialA11y: string,
     differentialTextual: string,
     id: number,
-    leadingPartyIds: number,
+    leadingPartyIds: number[],
     pollsTotal: number,
     status: string,
     turnout: number,
