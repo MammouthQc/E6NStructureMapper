@@ -58,6 +58,7 @@ type GlobalRiding = {
     closedPolls: number,
     differentialA11y: string,
     differentialTextual: string,
+    hasAGain: boolean,
     id: number,
     leadingPartyIds: number[],
     pollsTotal: number,

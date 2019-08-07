@@ -242,6 +242,7 @@ function mapE6NGlobalRidings(e6nRidings) {
       PC,
       PR,
       PT,
+      G,
     } = e6nRiding;
 
     return {
@@ -256,6 +257,7 @@ function mapE6NGlobalRidings(e6nRidings) {
       turnoutTextual: percentToTextualPercent(PR),
       voteNumber: N,
       voteNumberTextual: numberToTextualNumber(N),
+      hasAGain: G,
     };
   });
 }

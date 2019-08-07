@@ -1,6 +1,6 @@
 {
 	"name": "e6n-structure-mapper",
-	"version": "1.0.2",
+	"version": "1.0.11",
 	"description": "Structure mapper for E6N public DTOs.",
 	"repository": "MammouthQc/E6NStructureMapper",
 	"author": {
